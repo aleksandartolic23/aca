@@ -1,110 +1,183 @@
+@font-face {
+  font-family: "naslov";
+  src: url(fonts/Futura-std-medium.otf);
+  font-style: normal;
+  font-weight: 100;
+}
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family:'naslov';
-  src:url(fonts/Futura-std-medium.otf);
-  font-style:normal;
-  font-weight:100;
+
+#brod {
+  height: 100vh;
+  width: 100vw;
 }
-#brod{
-    height:100vh;
-    width:100vw;
-}
-#bottomheader{
-  font-family:naslov;
-  position:relative;
-  color:white;
-  width:30%;
-  height:10%;
-  left:50%;
-  font-size:25px;
-  text-align:center;
-  bottom:200px;
-  transform:translateX(-50%);
-}
-#ghostbutton{
-  position:absolute;
-  background-color: transparent;
-  color:white;
+
+#bottomheader {
+  font-family: naslov;
+  position: relative;
+  color: white;
+  width: 30%;
+  height: 10%;
+  left: 50%;
+  font-size: 25px;
   text-align: center;
-line-height: 2.5vw;
-  font-family:naslov;
-  font-size:1.5vw;
+  bottom: 200px;
+  transform: translateX(-50%);
+}
+
+#ghostbutton {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 2.5vw;
+  font-family: naslov;
+  font-size: 1.5vw;
   text-decoration: none;
-  border: 2px solid lightblue;
-  width:10vw;
-  height:2.5vw;
+  border: 2px solid #56bcbb;
+  width: 10vw;
+  height: 2.5vw;
   z-index: 7;
-  right:15%;
-  top:5%;
+  right: 15%;
+  top: 5%;
   letter-spacing: 2px;
 }
-#naslov{
-  position:absolute;
-  margin:auto;
+
+#naslov {
+  position: absolute;
+  margin: auto;
   z-index: 3;
-  color:white;
-  font-size:6vw;
+  color: white;
+  font-size: 6vw;
   top: 50%;
   left: 55%;
   transform: translateX(-55%) translateY(-50%);
-  font-family:naslov;
+  font-family: naslov;
+}
 
+#harpun {
+  width: 90%;
 }
-#harpun{
-  width:90%;
+
+i {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 25px;
 }
-i{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:25px;
-}
-#container {
-  height:100vh;
-  width:100vw;
+
+#header {
+  height: 100vh;
+  width: 100vw;
   position: relative;
   overflow: hidden;
 }
+
 @keyframes strela {
-  from {bottom: 0;}
-  to {bottom: 15px;}
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 15px;
+  }
 }
-#strelica{
-  position:absolute;
+#strelica {
+  position: absolute;
   animation-name: strela;
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 #example {
-   position: absolute;
-   top:0;
-   left:0;
-   width:0;
-   height:0;
-   border-style:solid;
-   border-left-width: 50vw;
-   border-right-width: 50vw;
-   border-bottom-width:50vh;
-   border-top-width: 50vh;
-   border-left-color: #408191;
-   border-right-color: #2c3247;
-   border-bottom-color:#408191;
-   border-top-color: #2c3247;
-   opacity:0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-left-width: 50vw;
+  border-right-width: 50vw;
+  border-bottom-width: 50vh;
+  border-top-width: 50vh;
+  border-left-color: #56bcbb;
+  border-right-color: #2e5470;
+  border-bottom-color: #56bcbb;
+  border-top-color: #2e5470;
+  opacity: 0.3;
 }
-@media screen and (max-width: 700px){
-    #ghostbutton{
-      height:4vw;
-      width:20vw;
-      font-size:3vw;
-      line-height: 4vw;
-    }
-    #naslov{
-      font-size: 9vw;
-      width:80%;
-    }
+
+#about {
+  position: relative;
+  border-bottom: 4px solid #56bcbb;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 10%;
+  text-align: right;
 }
+
+h2 {
+  bottom: 0;
+  right: 0;
+  font-family: naslov;
+  font-size: 4vw;
+  color: #2e5470;
+}
+
+#plavo, #belo {
+  width: 15vw;
+  height: 15vw;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+#plavo {
+  background-color: blue;
+}
+
+#belo {
+  background-color: green;
+}
+
+#rotacija, #drugarot {
+  width: 15vw;
+  height: 15vw;
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+#drugarot {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#slike {
+  width: 35vw;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 700px) {
+  #ghostbutton {
+    height: 4vw;
+    width: 20vw;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  #naslov {
+    font-size: 9vw;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
