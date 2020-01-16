@@ -4,6 +4,11 @@
   font-style: normal;
   font-weight: 100;
 }
+@font-face {
+  font-family: "pasus";
+  src: url(fonts/OpenSans-Regular.ttf);
+  font-style: normal;
+}
 body {
   margin: 0;
   padding: 0;
@@ -71,8 +76,8 @@ i {
 }
 
 #header {
-  height: 100vh;
-  width: 100vw;
+  height: 99vh;
+  width: 99vw;
   position: relative;
   overflow: hidden;
 }
@@ -122,22 +127,9 @@ i {
   padding: 0;
 }
 
-.onama {
-  position: relative;
-  width: 36vw;
-  display: block;
-  font-family: naslov;
-}
-
-.odvojeno {
-  position: relative;
-  display: block;
-  width: 35%;
-}
-
 h2#podvuceninaslov {
   position: relative;
-  bottom: -2vw;
+  bottom: -3vh;
   right: 0;
   font-family: naslov;
   font-size: 3.2vw;
@@ -151,6 +143,20 @@ h2#naslovsekcije {
   color: #2e5470;
   width: 36vw;
   z-index: 8;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
+
+p#onamaharpun {
+  width: 36vw;
+  position: absolute;
+  top: 27vh;
+  z-index: 9;
+  font-family: pasus;
+  color: #727678;
+  letter-spacing: 0.7px;
+  line-height: 2;
+  font-size: 0.9vw;
 }
 
 #plavo, #belo {
@@ -201,6 +207,16 @@ h2#naslovsekcije {
   width: 70vw;
 }
 
+@media screen and (max-width: 1200px) {
+  p#onamaharpun {
+    top: 25vh;
+    font-size: 1.5vw;
+  }
+
+  h2#naslovsekcije {
+    font-size: 4vw;
+  }
+}
 @media screen and (max-width: 700px) {
   #ghostbutton {
     height: 4vw;
@@ -212,6 +228,35 @@ h2#naslovsekcije {
   #naslov {
     font-size: 9vw;
     width: 80%;
+  }
+
+  h2#podvuceninaslov {
+    font-size: 6vw;
+  }
+
+  h2#naslovsekcije {
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  p#onamaharpun {
+    width: 100%;
+    top: 20vh;
+    font-size: 2.5vw;
+  }
+
+  #slike {
+    top: 60vh;
+    width: 100%;
+  }
+
+  #about {
+    width: 50%;
+  }
+
+  #rotacija, #drugarot, #plavo, #belo {
+    width: 25vw;
+    height: 25vw;
   }
 }
 
