@@ -74,6 +74,10 @@ body {
   width:99vw;
   height:100vh;
 }
+#sectionmis{
+  width:99vw;
+  height:120vh;
+}
 #bottomheader{
   font-family:naslov;
   position:relative;
@@ -296,6 +300,62 @@ p#cetvrtipasus{
   font-size: 4vw;
   top:-50px;
 }
+div#advisors{
+  position:relative;
+  top:175px;
+  width:110%;
+  height:70%;
+}
+div#people{
+  width:45%;
+  height:30%;
+  display:inline-block;
+  margin-right:2vw;
+  margin-bottom:1.5vw;
+
+}
+div#onjima{
+  position:relative;
+  float:right;
+  line-height: 1.9;
+  height:100%;
+  width:60%;
+}
+img#faces{
+  position:relative;
+  height:100%;
+}
+h2#unpar{
+  margin-bottom:1.5vw;
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding:0;
+  font-family: naslov;
+  font-size:3.2vw;
+  color: $tamno;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
+div#krajteksta{
+  position:relative;
+  float:right;
+  line-height: 1.9;
+  height:100%;
+  width:70%;
+}
+ul{
+  color:$plava;
+  font-weight:bold;
+  left:5px;
+  font-family: pasus;
+  font-size: 2vh;
+}
+li{
+  color:$pasusboja;
+   font-weight: normal;
+   font-size:1.5vh;
+}
 @media screen and (max-width:1200px){
   p#onamaharpun{
     top:25vh;
@@ -365,6 +425,10 @@ p#cetvrtipasus{
     }
     #footport{
       top: +20px;
+    }
+    #sectionmis{
+      width:99vw;
+      height:140vh;
     }
 
 
