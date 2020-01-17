@@ -196,7 +196,7 @@ h2#naslovsekcije{
   img#portfolio{
     position:absolute;
     width:100%;
-    height:100%;
+    height:120%;
   }
 #plavo, #belo{
   width:15vw;
@@ -254,9 +254,15 @@ div#firstdiv{
   margin-bottom:15px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: blue;
   display:inline-block;
   padding:20px;
+}
+div#firstdiv:hover{
+  background-color: gray;
+  background-color: rgba(120, 120, 120, .1);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.43);
 }
 p#prvipasus{
   @extend %pasus-portfolio;
@@ -272,13 +278,23 @@ p#trecipasus{
   @extend %pasus-portfolio;
   color:$plava;
   font-style: italic;
-  top:9vh;
+  top:9.5vh;
 
 }
 p#cetvrtipasus{
   @extend %pasus-portfolio;
-    top:8vh;
+    top:9vh;
 
+}
+#footport{
+  position:relative;
+  text-align:center;
+  margin-left:10%;
+  width:65%;
+  color:white;
+  font-family:naslov;
+  font-size: 4vw;
+  top:-50px;
 }
 @media screen and (max-width:1200px){
   p#onamaharpun{
@@ -289,22 +305,21 @@ p#cetvrtipasus{
     font-size: 4vw;
   }
 }
-@media screen and (max-width: 700px){
-    #ghostbutton{
-      height:4vw;
-      width:20vw;
-      font-size:3vw;
+@media screen and (max-width: 768px){
+    %ghost-btn{
       line-height: 4vw;
+      font-size:3vw;
+      width:20vw;
+      height:4vw;
+      z-index: 7;
     }
     #naslov{
       font-size: 9vw;
       width:80%;
     }
     h2#podvuceninaslov{
-      font-size: 6vw;
     }
     h2#naslovsekcije{
-      font-size: 6vw;
       width:100%;
     }
       p#onamaharpun{
@@ -320,9 +335,38 @@ p#cetvrtipasus{
       width:50%;
     }
     #rotacija,#drugarot,#plavo,#belo{
-      width:25vw;
-      height:25vw;
+      left:45px;
+      top:45px;
+      width:22vw;
+      height:20vw;
     }
+    #section{
+      width:99vw;
+      height:120vh;
+    }
+    %pasus-portfolio{
+      font-size:2vw;
+    }
+    div#firstdiv{
+      position:relative;
+      width:50vw;
+      height:30vh;
+    }
+    #port{
+      width:50%;
+    }
+    %section-naslov{
+      font-size:6vw;
+    }
+    img#portfolio{
+      position:absolute;
+      width:100%;
+      height:200%;
+    }
+    #footport{
+      top: +20px;
+    }
+
 
 
 
