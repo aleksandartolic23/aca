@@ -11,6 +11,23 @@ $pasusboja: #727678;
   -ms-transform: $property;
   transform: $property;
 }
+%section-naslov {
+  position:relative;
+  bottom:-3vh;
+  right:0;
+  font-family: naslov;
+  font-size:3.2vw;
+}
+%about-naslov{
+  position:relative;
+  border-bottom: 4px solid $plava;
+  left:0;
+  top:0;
+  width:27%;
+  height:10%;
+  text-align:right;
+  padding:0;
+}
 @font-face {
   font-family:'naslov';
   src:url(fonts/Futura-std-medium.otf);
@@ -30,7 +47,10 @@ body {
     height:100vh;
     width:100vw;
 }
-
+#section{
+  width:99vw;
+  height:100vh;
+}
 #bottomheader{
   font-family:naslov;
   position:relative;
@@ -71,9 +91,7 @@ body {
   left: 55%;
  transform:translateX(-55%) translateY(-50%);
   font-family:naslov;
-
 }
-
 #harpun{
   width:90%;
 }
@@ -85,10 +103,11 @@ i{
   bottom:25px;
 }
 #header {
-  height:99vh;
+  height:100vh;
   width:99vw;
   position: relative;
   overflow: hidden;
+  margin:0;
 }
 
 @keyframes strela {
@@ -120,23 +139,21 @@ i{
    opacity:0.3;
 }
 #about{
-  position:relative;
-  border-bottom: 4px solid $plava;
-  left:0;
-  top:0;
-  width:27%;
-  height:10%;
-  text-align:right;
-  padding:0;
+  @extend %about-naslov;
+}
+#port{
+  @extend %about-naslov;
+  top:15px;
+  width:37%;
 }
 h2#podvuceninaslov{
-  position:relative;
-  bottom:-3vh;
-  right:0;
-  font-family: naslov;
-  font-size:3.2vw;
+@extend %section-naslov;
   color: $tamno;
   }
+h2#portfolionaslov{
+  @extend %section-naslov;
+  color:white;
+}
 h2#naslovsekcije{
   position:absolute;
   font-family: naslov;
@@ -157,6 +174,11 @@ h2#naslovsekcije{
     letter-spacing: 0.7px;
     line-height: 2;
     font-size:0.9vw;
+  }
+  img#portfolio{
+    position:absolute;
+    width:100%;
+    height:100%;
   }
 #plavo, #belo{
   width:15vw;
