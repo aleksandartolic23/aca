@@ -201,13 +201,13 @@ p#onamaharpun {
   color: #727678;
   letter-spacing: 0.7px;
   line-height: 2;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 
 img#portfolio {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 105%;
 }
 
 #plavo, #belo {
@@ -394,11 +394,11 @@ li {
 @media screen and (max-width: 1200px) {
   p#onamaharpun {
     top: 25vh;
-    font-size: 1.5vw;
+    font-size: 0.9vw;
   }
 
   h2#naslovsekcije {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 li {
