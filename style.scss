@@ -1,6 +1,7 @@
 $plava : #56bcbb ;
 $tamno: #2e5470;
 $pasusboja: #727678;
+$levo: 17%;
 @mixin transform($property){
   transform: translate($property);
   -ms-transform: translate($property);
@@ -27,6 +28,28 @@ $pasusboja: #727678;
   height:10%;
   text-align:right;
   padding:0;
+}
+%ghost-btn{
+  position:absolute;
+  background-color: transparent;
+  color:white;
+  text-align: center;
+  line-height: 2.5vw;
+  font-family:naslov;
+  font-size:1.5vw;
+  text-decoration: none;
+  border: 2px solid $plava;
+  width:10vw;
+  height:2.5vw;
+  z-index: 7;
+  letter-spacing: 2px;
+}
+%pasus-portfolio{
+  position:relative;
+  font-family:pasus;
+  font-size:0.9vw;
+  color:white;
+  line-height: 2;
 }
 @font-face {
   font-family:'naslov';
@@ -64,21 +87,15 @@ body {
   transform:translateX(-50%);
 }
 #ghostbutton{
-  position:absolute;
-  background-color: transparent;
-  color:white;
-  text-align: center;
-  line-height: 2.5vw;
-  font-family:naslov;
-  font-size:1.5vw;
-  text-decoration: none;
-  border: 2px solid $plava;
-  width:10vw;
-  height:2.5vw;
-  z-index: 7;
-  right:15%;
-  top:5%;
-  letter-spacing: 2px;
+@extend %ghost-btn;
+right:15%;
+top:5%;
+
+}
+#divghostbutton{
+  @extend %ghost-btn;
+  left:5%;
+  bottom:10%;
 }
 
 #naslov{
@@ -144,7 +161,8 @@ i{
 #port{
   @extend %about-naslov;
   top:15px;
-  width:37%;
+  width:32%;
+  z-index: 9;
 }
 h2#podvuceninaslov{
 @extend %section-naslov;
@@ -210,8 +228,57 @@ h2#naslovsekcije{
 }
 #container{
   position:relative;
-  left:17%;
+  left:$levo;
   width:70vw;
+}
+div#content{
+  position:absolute;
+  left:$levo;
+  z-index:10;
+  margin:40px;
+  margin-left:0;
+}
+img#logotip{
+  position:absolute;
+  width:40%;
+}
+img#drugacijilogo{
+  position:absolute;
+  width:20%;
+  height:30%;
+}
+div#firstdiv{
+  position:relative;
+  width:30vw;
+  height:30vh;
+  margin-bottom:15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: blue;
+  display:inline-block;
+  padding:20px;
+}
+p#prvipasus{
+  @extend %pasus-portfolio;
+  color:$plava;
+  font-style: italic;
+  top:5vh;
+}
+p#drugipasus{
+  @extend %pasus-portfolio;
+  top:7vh;
+}
+p#trecipasus{
+  @extend %pasus-portfolio;
+  color:$plava;
+  font-style: italic;
+  top:9vh;
+
+}
+p#cetvrtipasus{
+  @extend %pasus-portfolio;
+    top:8vh;
+
 }
 @media screen and (max-width:1200px){
   p#onamaharpun{
