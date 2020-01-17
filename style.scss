@@ -79,8 +79,11 @@ body {
   height:100vh;
 }
 #section4{
+  position:relative;
   width:99vw;
   height:100vh;
+  top:50px;
+
 }
 #bottomheader{
   font-family:naslov;
@@ -199,12 +202,12 @@ h2#naslovsekcije{
     color: $pasusboja;
     letter-spacing: 0.7px;
     line-height: 2;
-    font-size:0.8vw;
+    font-size:1vw;
   }
   img#portfolio{
     position:absolute;
     width:100%;
-    height:105%;
+    height:110%;
   }
 #plavo, #belo{
   width:15vw;
@@ -371,9 +374,9 @@ li{
   }
 }
 li{
-    font-size: 1vh;
-
+    font-size: 0.9vw;
 }
+
 @media screen and (max-width: 768px){
     %ghost-btn{
       line-height: 4vw;
@@ -452,11 +455,9 @@ li{
     }
     ul{
         font-size: 1.5vh;
-
     }
     li{
         font-size: 1vh;
-
     }
     #onjima{
       width:100%;
