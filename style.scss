@@ -47,7 +47,7 @@ $levo: 17%;
 %pasus-portfolio{
   position:relative;
   font-family:pasus;
-  font-size:0.8vw;
+  font-size:0.7vmax;
   color:white;
   line-height: 2;
 }
@@ -75,8 +75,11 @@ body {
   height:100vh;
 }
 #sectionmis{
+  background-image: url("images/portfolio.png");
+  background-size:cover;
+  background-position:center;
   width:99vw;
-  height:100vh;
+  height:115vh;
 }
 #section4{
   position:relative;
@@ -92,9 +95,9 @@ body {
   width:30%;
   height:10%;
   left:50%;
-  font-size:25px;
+  font-size:2vmax;
   text-align:center;
-  bottom:200px;
+  bottom:20vmax;;
   transform:translateX(-50%);
 }
 #ghostbutton{
@@ -236,6 +239,7 @@ h2#naslovsekcije{
   position:absolute;
   top:100px;
   float:right;
+  height:40vw;
 }
 #container{
   position:relative;
@@ -248,6 +252,8 @@ div#content{
   z-index:10;
   margin:40px;
   margin-left:0;
+  width:70vw;
+  height:100%;
 }
 img#logotip{
   position:absolute;
@@ -260,8 +266,8 @@ img#drugacijilogo{
 }
 div#firstdiv{
   position:relative;
-  width:30vw;
-  height:27vh;
+  width:37%;
+  height:30%;
   margin-bottom:15px;
   margin-left: 15px;
   margin-right: 15px;
@@ -279,11 +285,11 @@ p#prvipasus{
   @extend %pasus-portfolio;
   color:$plava;
   font-style: italic;
-  top:5vh;
+  top:5vmin;
 }
 p#drugipasus{
   @extend %pasus-portfolio;
-  top:7vh;
+  top:7vmin;
 }
 p#trecipasus{
   @extend %pasus-portfolio;
@@ -301,17 +307,18 @@ p#cetvrtipasus{
   position:relative;
   text-align:center;
   margin-left:10%;
-  width:65%;
+  width:80%;
   color:white;
   font-family:naslov;
-  font-size: 4vw;
+  font-size: 3vmax;
   top:-50px;
 }
 div#advisors{
   position:relative;
-  top:175px;
+  top:13vmax;
   width:110%;
   height:70%;
+  background-color: white;
 }
 div#people{
   width:45%;
@@ -364,7 +371,7 @@ li{
    font-weight: normal;
    font-size:1.5vh;
 }
-@media screen and (max-width:1200px){
+/*@media screen and (max-width:1200px){
   p#onamaharpun{
     top:25vh;
     font-size: 0.9vw;
@@ -375,9 +382,12 @@ li{
 }
 li{
     font-size: 0.9vw;
-}
+}*/
 
 @media screen and (max-width: 768px){
+  div#firstdiv{
+    width:100%;
+  }
     %ghost-btn{
       line-height: 4vw;
       font-size:3vw;
@@ -391,7 +401,7 @@ li{
     }
     h2#naslovsekcije{
       width:100%;
-      font-size: 6vw;
+      font-size: 6vmin;
     }
     h2#unpar{
       font-size:6vw;
@@ -399,11 +409,11 @@ li{
       p#onamaharpun{
         width:100%;
         top:20vh;
-        font-size:2.5vw;
+        font-size:2.5vmin;
       }
       #slike{
-        top:60vh;
-        width:100%;
+        top:45vh;
+        width:60vmin;
       }
     #about {
       width:50%;
@@ -411,8 +421,8 @@ li{
     #rotacija,#drugarot,#plavo,#belo{
       left:45px;
       top:45px;
-      width:22vw;
-      height:20vw;
+      width:22vmin;
+      height:20vmin;
     }
     #section{
       width:99vw;
@@ -424,13 +434,18 @@ li{
     div#firstdiv{
       position:relative;
       width:50vw;
-      height:25vh;
+      height:30vmax;
     }
     #port{
       width:50%;
+      top:0;
     }
     %section-naslov{
-      font-size:6vw;
+      font-size:6vmin;
+    }
+    div#section{
+      position:relative;
+      top:-15%;
     }
     img#portfolio{
       position:absolute;
@@ -442,31 +457,31 @@ li{
     }
     #sectionmis{
       width:99vw;
-      height:100vh;
+      height:200vmax;
     }
     div#people{
       width:100%;
-      height:30%;
+      height:50%;
       display:block;
     }
     img#faces{
-      height:25vw;
-      width:25vw;
+      height:14vmax;
+      width:14vmax;
     }
     ul{
-        font-size: 1.5vh;
+        font-size: 2vmax;
     }
     li{
-        font-size: 1vh;
+        font-size: 1.3vmax;
     }
     #onjima{
       width:100%;
     }
-    #section4{
-      position:relative;
-      top:70vh;
-    }
     #divghostbutton{
-      top:27vh;
+      top:27vmax;
+    }
+    img#drugacijilogo{
+      width:17%;
+      height:20%;
     }
 }
