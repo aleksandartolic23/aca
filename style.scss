@@ -65,6 +65,25 @@ $levo: 17%;
 body {
   margin:0;
   padding: 0;
+  height: auto;
+  width:100%;
+  scroll-behavior: smooth;
+}
+.indikator {
+	width: auto;
+	height: auto;
+	position:fixed;
+	top: 40%;
+	right: 2%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+  z-index:15;
+}
+.indikator > a,span {
+  text-decoration:none;
+	color: white;
+	display: block;
+	margin: 1vh 0;
 }
 #brod{
     height:100vh;
