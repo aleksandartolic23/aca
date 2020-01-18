@@ -29,6 +29,28 @@ $levo: 17%;
   text-align:right;
   padding:0;
 }
+#ghostbutton:hover, #divghostbutton:hover{
+  background-color: transparent;
+  transition:0.5s ease;
+  transform-origin:bottom;
+}
+
+ #ghostbutton::after, #divghostbutton::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: $plava;
+  transform-origin:bottom;
+  transition:width 0.5s ease;
+  z-index:-1;
+}
+
+#ghostbutton:hover::after, #divghostbutton:hover::after {
+  width: 100%;
+}
 %ghost-btn{
   position:absolute;
   background-color: transparent;
@@ -84,6 +106,7 @@ body {
 	color: white;
 	display: block;
 	margin: 1vh 0;
+  transition:color 0.5s ease;
 }
 #brod{
     height:100vh;
@@ -272,7 +295,7 @@ h2#naslovsekcije{
   display:inline-block;
 }
 #plavo{background-color:$plava;}
-#belo{background-color:white;}
+#belo{background-color:transparent;}
 #rotacija,#drugarot{
   width:15vw;
   height:15vw;
@@ -292,6 +315,7 @@ h2#naslovsekcije{
   top:100px;
   float:right;
   height:40vw;
+  overflow:hidden;
 }
 #container{
   position:relative;
@@ -315,7 +339,7 @@ img#logotip{
 img#drugacijilogo{
   position:absolute;
   width:20%;
-  height:30%;
+  height:25%;
 }
 div#firstdiv{
   position:relative;

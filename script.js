@@ -1,6 +1,12 @@
-
+const plava = '#56bcbb' ;
+$( document ).ready(function() {
+$('a').click(function(e){
+  	e.preventDefault();
+	var jumpId = $(this).attr('href');
+	$('body, html').animate({scrollTop: $(jumpId).offset().top}, 1000);
+});
+});
 window.onscroll = function() {myFunction()};
- const plava = '#56bcbb' ;
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   	console.log(winScroll);
