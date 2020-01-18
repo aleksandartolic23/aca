@@ -102,6 +102,27 @@ body {
   transition: color 0.5s ease;
 }
 
+span#one {
+  color: #56bcbb;
+}
+
+.indikator > h5 {
+  width: 5%;
+  height: 3.5vh;
+  display: block;
+  margin: 1vh 0;
+  transition: color 0.5s ease;
+  color: white;
+}
+
+h5 {
+  visibility: hidden;
+  position: relative;
+  font-family: pasus;
+  color: transparent;
+  font-size: 2vh;
+}
+
 #brod {
   height: 100vh;
   width: 100vw;
