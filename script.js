@@ -10,11 +10,16 @@ $('a').click(function(e){
 
 
 $('#one').hover(function(){
+  $('#dva').finish();
+  $('#tri').finish();
+  $('#cetiri').finish();
+  $('#pet').finish();
+
   document.getElementById("one").style.color=plava;
-  $('#jedan').css("visibility","visible");
+  $('#jedan').css({"opacity":"0","visibility":"visible"}).animate({opacity:1, right:-10},700);
 },function(){
 
-  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=60) || (scrolled>=90)){
+  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
   document.getElementById("one").style.color="white";
 }
@@ -25,7 +30,7 @@ if (scrolled >=0 && scrolled <=10)
 {
   document.getElementById("one").style.color=plava;
 }
-$('#jedan').css("visibility","hidden");
+$('#jedan').animate({right:-25, opacity:0},700);
 })
 
 
@@ -33,10 +38,15 @@ $('#jedan').css("visibility","hidden");
 
 
 $('#two').hover(function(){
+  $('#jedan').finish();
+  $('#tri').finish();
+  $('#cetiri').finish();
+  $('#pet').finish();
   document.getElementById("two").style.color=plava;
-  $('#dva').css("visibility","visible");
+
+    $('#dva').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},700);
 },function(){
-  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=60) || (scrolled>=90)){
+  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
   document.getElementById("two").style.color="white";
 }
@@ -47,51 +57,62 @@ if (scrolled >=10 && scrolled <=38)
 {
   document.getElementById("two").style.color=plava;
 }
-  $('#dva').css("visibility","hidden");
+  $('#dva').animate({right:-30, opacity:0},700);
 })
 
 $('#three').hover(function(){
+  $('#dva').finish();
+  $('#jedan').finish();
+  $('#cetiri').finish();
+  $('#pet').finish();
   document.getElementById("three").style.color=plava;
-  $('#tri').css("visibility","visible");
+  $('#tri').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},700);
 },function(){
-  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=60) || (scrolled>=90)){
+  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
   document.getElementById("three").style.color="white";
 }
 else{
   document.getElementById("three").style.color="black";
 }
-  if (scrolled >=38 && scrolled <=60)
+  if (scrolled >=38 && scrolled <=63)
   {
     document.getElementById("three").style.color=plava;
   }
-
-  $('#tri').css("visibility","hidden");
+  $('#tri').animate({right:-30, opacity:0},700);
 })
 
 $('#four').hover(function(){
+  $('#dva').finish();
+  $('#tri').finish();
+  $('#jedan').finish();
+  $('#pet').finish();
   document.getElementById("four").style.color=plava;
-  $('#cetiri').css("visibility","visible");
+  $('#cetiri').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},700);
 },function(){
-  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=60) || (scrolled>=90)){
+  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
   document.getElementById("four").style.color="white";
 }
 else{
   document.getElementById("four").style.color="black";
 }
-if (scrolled >60 && scrolled <=90)
+if (scrolled >63 && scrolled <=90)
 {
   document.getElementById("four").style.color=plava;
 }
-  $('#cetiri').css("visibility","hidden");
+  $('#cetiri').animate({right:-30, opacity:0},700);
 })
 
 $('#five').hover(function(){
+  $('#dva').finish();
+  $('#tri').finish();
+  $('#cetiri').finish();
+  $('#jedan').finish();
   document.getElementById("five").style.color=plava;
-  $('#pet').css("visibility","visible");
+  $('#pet').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},700);
 },function(){
-  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=60) || (scrolled>=90)){
+  if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
   document.getElementById("five").style.color="white";
 }
@@ -102,7 +123,7 @@ if (scrolled >=90)
 {
   document.getElementById("five").style.color=plava;
 }
-  $('#pet').css("visibility","hidden");
+    $('#pet').animate({right:-30, opacity:0},700);
 })
 
 
@@ -136,7 +157,7 @@ function myFunction() {
       document.getElementById("cetiri").style.color = "black";
       document.getElementById("pet").style.color = "black";
   	}
-  	else if (scrolled >= 38 && scrolled < 60) {
+  	else if (scrolled >= 38 && scrolled < 63) {
       document.getElementById("one").style.color = "white";
       document.getElementById("two").style.color = "white";
       document.getElementById("three").style.color = plava;
@@ -148,7 +169,7 @@ function myFunction() {
       document.getElementById("cetiri").style.color = "white";
       document.getElementById("pet").style.color = "white";
   	}
-  	else if (scrolled >= 60 && scrolled < 90) {
+  	else if (scrolled >= 63 && scrolled < 90) {
       document.getElementById("one").style.color = "black";
       document.getElementById("two").style.color = "black";
       document.getElementById("three").style.color = "black";

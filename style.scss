@@ -69,7 +69,7 @@ $levo: 17%;
 %pasus-portfolio{
   position:relative;
   font-family:pasus;
-  font-size:0.7vmax;
+  font-size:0.8vmax;
   color:white;
   line-height: 2;
 }
@@ -91,6 +91,9 @@ body {
   width:100%;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .indikator {
 	width: auto;
 	height: auto;
@@ -106,39 +109,46 @@ body {
 	color: white;
 	display: block;
 	margin: 1vh 0;
+  z-index:16;
   transition:color 0.5s ease;
 }
 span#one{
   color:$plava;
 }
 .indikator > h5{
+  visibility:hidden;
+  position:relative;
+  font-family:pasus;
+  font-size:1.8vh;
+  right:-25px;
   width:5%;
   height:3.5vh;
   display:block;
   margin: 1vh 0;
   transition:color 0.5s ease;
   color:white;
+  pointer-events: none;
 
 }
-h5{
+/*h5{
   visibility:hidden;
   position:relative;
   font-family:pasus;
-  color:transparent;
   font-size:2vh;
-}
+  right:-30;
+}*/
 
 #brod{
     height:100vh;
     width:100vw;
 }
 #section{
-  width:99vw;
+  width:100vw;
   height:100vh;
 }
 #s5{
   margin-top:5%;
-  width:99vw;
+  width:100vw;
   height:100vh;
   background-image: url("images/sekcija5.png");
   background-position: center;
@@ -149,12 +159,12 @@ h5{
   background-image: url("images/portfolio.png");
   background-size:cover;
   background-position:center;
-  width:99vw;
+  width:100vw;
   height:115vh;
 }
 #section4{
   position:relative;
-  width:99vw;
+  width:100vw;
   height:100vh;
 
 }
@@ -205,7 +215,7 @@ i{
 }
 #header {
   height:100vh;
-  width:99vw;
+  width:100vw;
   position: relative;
   overflow: hidden;
   margin:0;
@@ -332,10 +342,9 @@ h2#naslovsekcije{
   width:40vw;
   @include transform(rotate(45deg));
   position:absolute;
-  top:100px;
+  top:10vh;
   float:right;
   height:40vw;
-  overflow:hidden;
 }
 #container{
   position:relative;
@@ -415,7 +424,7 @@ div#advisors{
   top:11vmax;
   width:110%;
   height:70%;
-  background-color: white;
+
 }
 div#people{
   width:45%;
@@ -424,11 +433,13 @@ div#people{
   margin-right:2vw;
   margin-bottom:1.5vw;
 
+
 }
 div#onjima{
   position:relative;
   float:right;
   line-height: 1.9;
+  left:-8%;
   height:100%;
   width:60%;
 }
@@ -480,11 +491,16 @@ li{
 li{
     font-size: 0.9vw;
 }*/
-
+@media screen and (max-width:600px){
+  .indikator{
+    display:none;
+  }
+}
 @media screen and (max-width: 768px){
   #section4{
-    height:200vh;
-    bottom:-15vmax;
+    height:auto;
+    margin-bottom:25vmax;
+  /*  bottom:-15vmax;*/
 
   }
   div#firstdiv{
@@ -503,32 +519,34 @@ li{
     }
     h2#naslovsekcije{
       width:100%;
-      font-size: 6vmin;
+      font-size: 4vmin;
     }
     h2#unpar{
       font-size:6vw;
     }
       p#onamaharpun{
         width:100%;
-        top:20vh;
+        top:15vmin;
         font-size:2.5vmin;
       }
       #slike{
-        top:45vh;
         width:60vmin;
+        top:55vh;
       }
     #about {
       width:50%;
+
     }
     #rotacija,#drugarot,#plavo,#belo{
       left:45px;
       top:45px;
-      width:22vmin;
-      height:20vmin;
+      width:16vmin;
+      height:16vmin;
     }
     #section{
-      width:99vw;
-      height:120vh;
+      width:100vw;
+      height:100vh;
+      top:+20vh;
     }
     %pasus-portfolio{
       font-size:2vw;
@@ -548,7 +566,7 @@ li{
     }
     div#section{
       position:relative;
-      top:-15%;
+      top:-5%;
     }
     img#portfolio{
       position:absolute;
@@ -559,7 +577,7 @@ li{
       top: 0px;
     }
     #sectionmis{
-      width:99vw;
+      width:100vw;
       height:200vmax;
     }
     div#people{
@@ -572,13 +590,18 @@ li{
       width:13vmax;
     }
     ul{
-        font-size: 2vmax;
+        font-size: 1.5vmax;
     }
     li{
         font-size: 1.3vmax;
     }
-    #onjima{
-      width:100%;
+    div#onjima{
+      height:100%;
+      width:60%;
+      line-height:2.5vmin;
+    }
+    div#krajteksta{
+      top:8vmax;
     }
     #divghostbutton{
       top:27vmax;
@@ -594,7 +617,26 @@ li{
     h2#unpar{
       font-size:3.2vmax;
     }
+    %ghost-btn{
+      border: 1px solid $plava;
+    }
+      h2#naslovsekcijewhite{
+        width:80%;
+      }
+
   /*  #container{
       top:7vmax;
     }*/
+}
+@media screen and (max-width:414px){
+  #slike{
+    position:relative;
+    width:60vmin;
+    top:50vmax;
+  }
+  p#onamaharpun{
+    width:100%;
+    top:15vmin;
+    font-size:2.5vmin;
+  }
 }
