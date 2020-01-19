@@ -115,9 +115,9 @@ body {
 span#one{
   color:$plava;
 }
-div#text{
+div#textic{
   position:relative;
-  top:10vh;
+  top:15vh;
 }
 .indikator > h5{
   visibility:hidden;
@@ -279,7 +279,6 @@ h2#naslovsekcije{
   z-index:8;
     line-height: 1;
     letter-spacing: 0.7px;
-    top:-5vmax;
   }
   h2#naslovsekcijewhite{
     position:absolute;
@@ -309,7 +308,7 @@ h2#naslovsekcije{
   p#onamaharpun{
     width:36vw;
     position:absolute;
-    top:27vh;
+    top:20vh;
     z-index:9;
     font-family: pasus;
     color: $pasusboja;
@@ -512,7 +511,6 @@ li{
     }
     h2#naslovsekcije{
       width:100%;
-      top:-10vmax;
       font-size: 4vmin;
     }
     h2#unpar{
@@ -632,6 +630,9 @@ li{
     width:100%;
     top:15vmin;
     font-size:2.5vmin;
+  }
+  ul{
+    font-size:1vmax;
   }
 }
 @media screen and (max-width:500px){
