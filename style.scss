@@ -86,14 +86,16 @@ $levo: 17%;
 }
 body {
   margin:0;
-  padding: 0;
+  padding:0;
   height: auto;
-  width:100%;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
     display: none;
 }
+*{-ms-overflow-style: none;
+    scrollbar-width: none;
+  }*
 .indikator {
 	width: auto;
 	height: auto;
@@ -102,15 +104,18 @@ body {
 	right: 2%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   z-index:15;
 }
-.indikator > a,span {
+.indikator {
+  a, span {
   text-decoration:none;
 	color: white;
 	display: block;
 	margin: 1vh 0;
   z-index:16;
   transition:color 0.5s ease;
+}
 }
 span#one{
   color:$plava;
@@ -436,8 +441,6 @@ div#people{
   display:inline-block;
   margin-right:2vw;
   margin-bottom:1.5vw;
-
-
 }
 div#onjima{
   position:relative;

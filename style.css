@@ -79,7 +79,6 @@ body {
   margin: 0;
   padding: 0;
   height: auto;
-  width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -87,7 +86,12 @@ body {
   display: none;
 }
 
-.indikator {
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* .indikator {
   width: auto;
   height: auto;
   position: fixed;
@@ -95,10 +99,11 @@ body {
   right: 2%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   z-index: 15;
 }
 
-.indikator > a, span {
+.indikator a, .indikator span {
   text-decoration: none;
   color: white;
   display: block;
