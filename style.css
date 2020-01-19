@@ -1,6 +1,6 @@
 h2#portfolionaslov, h2#podvuceninaslov {
   position: relative;
-  bottom: -2vh;
+  bottom: -1.6vh;
   right: 0;
   font-family: naslov;
   font-size: 3.2vw;
@@ -8,11 +8,11 @@ h2#portfolionaslov, h2#podvuceninaslov {
 
 #port, #about {
   position: relative;
-  border-bottom: 2px solid #56bcbb;
+  border-bottom: 3.5px solid #56bcbb;
   left: 0;
   top: 0;
   width: 27%;
-  height: 8%;
+  height: 9%;
   text-align: right;
   padding: 0;
 }
@@ -111,6 +111,11 @@ span#one {
   color: #56bcbb;
 }
 
+div#text {
+  position: relative;
+  top: 10vh;
+}
+
 .indikator > h5 {
   visibility: hidden;
   position: relative;
@@ -144,7 +149,7 @@ span#one {
 }
 
 #s5 {
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100vw;
   height: 100vh;
   background-image: url("images/sekcija5.png");
@@ -275,10 +280,11 @@ h2#naslovsekcije {
   font-family: naslov;
   font-size: 3.2vw;
   color: #2e5470;
-  width: 36vw;
+  width: 38vw;
   z-index: 8;
   line-height: 1;
   letter-spacing: 0.7px;
+  top: -5vmax;
 }
 
 h2#naslovsekcijewhite {
@@ -317,9 +323,9 @@ p#onamaharpun {
   z-index: 9;
   font-family: pasus;
   color: #727678;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.3px;
   line-height: 2;
-  font-size: 1vw;
+  font-size: 0.85vw;
 }
 
 img#portfolio {
@@ -514,18 +520,6 @@ li {
   font-size: 1.5vh;
 }
 
-/*@media screen and (max-width:1200px){
-  p#onamaharpun{
-    top:25vh;
-    font-size: 0.9vw;
-  }
-  h2#naslovsekcije{
-    font-size: 3vw;
-  }
-}
-li{
-    font-size: 0.9vw;
-}*/
 @media screen and (max-width: 600px) {
   .indikator {
     display: none;
@@ -557,6 +551,7 @@ li{
 
   h2#naslovsekcije {
     width: 100%;
+    top: -10vmax;
     font-size: 4vmin;
   }
 
@@ -567,7 +562,7 @@ li{
   p#onamaharpun {
     width: 100%;
     top: 15vmin;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
   }
 
   #slike {
@@ -593,7 +588,7 @@ li{
   }
 
   p#prvipasus, p#drugipasus, p#trecipasus, p#cetvrtipasus {
-    font-size: 2vw;
+    font-size: 10px;
   }
 
   div#firstdiv {
@@ -702,6 +697,11 @@ li{
     width: 100%;
     top: 15vmin;
     font-size: 2.5vmin;
+  }
+}
+@media screen and (max-width: 500px) {
+  p#prvipasus, p#drugipasus, p#trecipasus, p#cetvrtipasus {
+    font-size: 2.1vw;
   }
 }
 
