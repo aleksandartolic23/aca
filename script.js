@@ -9,26 +9,26 @@ $('a').click(function(e){
 
 
 
-$('#one').hover(function(){
+$('#kec').hover(function(){
   $('#dva').finish();
   $('#tri').finish();
   $('#cetiri').finish();
   $('#pet').finish();
 
-  document.getElementById("one").style.color=plava;
+  document.getElementById("kec").style.background = plava;
   $('#jedan').css({"opacity":"0","visibility":"visible"}).animate({opacity:1, right:-10},500);
 },function(){
 
   if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
-  document.getElementById("one").style.color="white";
+  document.getElementById("kec").style.background="white";
 }
 else{
-  document.getElementById("one").style.color="black";
+  document.getElementById("kec").style.background="black";
 }
 if (scrolled >=0 && scrolled <=10)
 {
-  document.getElementById("one").style.color=plava;
+  document.getElementById("kec").style.background=plava;
 }
 $('#jedan').animate({right:-25, opacity:0},700);
 $('#jedan').finish();
@@ -38,94 +38,94 @@ $('#jedan').finish();
 
 
 
-$('#two').hover(function(){
+$('#dvojka').hover(function(){
   $('#jedan').finish();
   $('#tri').finish();
   $('#cetiri').finish();
   $('#pet').finish();
-  document.getElementById("two").style.color=plava;
+  document.getElementById("dvojka").style.background = plava;
 
     $('#dva').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},500);
 },function(){
   if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
-  document.getElementById("two").style.color="white";
+  document.getElementById("dvojka").style.background="white";
 }
 else{
-  document.getElementById("two").style.color="black";
+  document.getElementById("dvojka").style.background="black";
 }
 if (scrolled >=10 && scrolled <=38)
 {
-  document.getElementById("two").style.color=plava;
+  document.getElementById("dvojka").style.background=plava;
 }
   $('#dva').animate({right:-30, opacity:0},700);
   $('#dva').finish();
 })
 
-$('#three').hover(function(){
+$('#trojka').hover(function(){
   $('#dva').finish();
   $('#jedan').finish();
   $('#cetiri').finish();
   $('#pet').finish();
-  document.getElementById("three").style.color=plava;
+  document.getElementById("trojka").style.background = plava;
   $('#tri').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},500);
 },function(){
   if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
-  document.getElementById("three").style.color="white";
+  document.getElementById("trojka").style.background="white";
 }
 else{
-  document.getElementById("three").style.color="black";
+  document.getElementById("trojka").style.background="black";
 }
   if (scrolled >=38 && scrolled <=63)
   {
-    document.getElementById("three").style.color=plava;
+    document.getElementById("trojka").style.background=plava;
   }
   $('#tri').animate({right:-30, opacity:0},700);
   $('#tri').finish();
 })
 
-$('#four').hover(function(){
+$('#cetvorka').hover(function(){
   $('#dva').finish();
   $('#tri').finish();
   $('#jedan').finish();
   $('#pet').finish();
-  document.getElementById("four").style.color=plava;
+  document.getElementById("cetvorka").style.background = plava;
   $('#cetiri').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},500);
 },function(){
   if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
-  document.getElementById("four").style.color="white";
+  document.getElementById("cetvorka").style.background="white";
 }
 else{
-  document.getElementById("four").style.color="black";
+  document.getElementById("cetvorka").style.background="black";
 }
 if (scrolled >63 && scrolled <=90)
 {
-  document.getElementById("four").style.color=plava;
+  document.getElementById("cetvorka").style.background=plava;
 }
   $('#cetiri').animate({right:-30, opacity:0},700);
   $('#cetiri').finish();
 })
 
-$('#five').hover(function(){
+$('#petica').hover(function(){
   $('#dva').finish();
   $('#tri').finish();
   $('#cetiri').finish();
   $('#jedan').finish();
-  document.getElementById("five").style.color=plava;
+  document.getElementById("petica").style.background = plava;
   $('#pet').css({"visibility":"visible","opacity":"0"}).animate({opacity:1, right:0},500);
 },function(){
   if ((scrolled >= 0 && scrolled<=10) || (scrolled >=38 && scrolled<=63) || (scrolled>=90)){
 
-  document.getElementById("five").style.color="white";
+  document.getElementById("petica").style.background="white";
 }
 else{
-  document.getElementById("five").style.color="black";
+  document.getElementById("petica").style.background="black";
 }
 if (scrolled >=90)
 {
-  document.getElementById("five").style.color=plava;
+  document.getElementById("petica").style.background=plava;
 }
     $('#pet').animate({right:-30, opacity:0},700);
     $('#pet').finish();
@@ -139,11 +139,11 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
  scrolled = Math.floor((winScroll / height) * 100);
   	if (scrolled >= 0 && scrolled < 10) {
-  		document.getElementById("one").style.color = plava;
-  		document.getElementById("two").style.color = "white";
-  		document.getElementById("three").style.color = "white";
-  		document.getElementById("four").style.color = "white";
-      document.getElementById("five").style.color = "white";
+      document.getElementById("kec").style.background = plava;
+      document.getElementById("dvojka").style.background = "white";
+      document.getElementById("trojka").style.background = "white";
+      document.getElementById("cetvorka").style.background = "white";
+      document.getElementById("petica").style.background = "white";
       document.getElementById("jedan").style.color = "white";
       document.getElementById("dva").style.color = "white";
       document.getElementById("tri").style.color = "white";
@@ -151,11 +151,11 @@ function myFunction() {
       document.getElementById("pet").style.color = "white";
   	}
   	else if (scrolled >= 10 && scrolled < 38) {
-      document.getElementById("one").style.color = "black";
-      document.getElementById("two").style.color = plava;
-      document.getElementById("three").style.color = "black";
-      document.getElementById("four").style.color = "black";
-      document.getElementById("five").style.color = "black";
+      document.getElementById("kec").style.background = "black";
+      document.getElementById("dvojka").style.background = plava;
+      document.getElementById("trojka").style.background = "black";
+      document.getElementById("cetvorka").style.background = "black";
+      document.getElementById("petica").style.background = "black";
       document.getElementById("jedan").style.color = "black";
       document.getElementById("dva").style.color = "black";
       document.getElementById("tri").style.color = "black";
@@ -163,11 +163,11 @@ function myFunction() {
       document.getElementById("pet").style.color = "black";
   	}
   	else if (scrolled >= 38 && scrolled < 63) {
-      document.getElementById("one").style.color = "white";
-      document.getElementById("two").style.color = "white";
-      document.getElementById("three").style.color = plava;
-      document.getElementById("four").style.color = "white";
-      document.getElementById("five").style.color = "white";
+      document.getElementById("kec").style.background = "white";
+      document.getElementById("dvojka").style.background ="white";
+      document.getElementById("trojka").style.background =plava;
+      document.getElementById("cetvorka").style.background ="white";
+      document.getElementById("petica").style.background ="white";
       document.getElementById("jedan").style.color = "white";
       document.getElementById("dva").style.color = "white";
       document.getElementById("tri").style.color = "white";
@@ -175,11 +175,11 @@ function myFunction() {
       document.getElementById("pet").style.color = "white";
   	}
   	else if (scrolled >= 63 && scrolled < 90) {
-      document.getElementById("one").style.color = "black";
-      document.getElementById("two").style.color = "black";
-      document.getElementById("three").style.color = "black";
-      document.getElementById("four").style.color = plava;
-      document.getElementById("five").style.color = "black";
+      document.getElementById("kec").style.background = "black";
+      document.getElementById("dvojka").style.background = "black";
+      document.getElementById("trojka").style.background = "black";
+      document.getElementById("cetvorka").style.background = plava;
+      document.getElementById("petica").style.background = "black";
       document.getElementById("jedan").style.color = "black";
       document.getElementById("dva").style.color = "black";
       document.getElementById("tri").style.color = "black";
@@ -187,11 +187,11 @@ function myFunction() {
       document.getElementById("pet").style.color = "black";
   	}
     else if (scrolled >= 90) {
-      document.getElementById("one").style.color = "white";
-      document.getElementById("two").style.color = "white";
-      document.getElementById("three").style.color = "white";
-      document.getElementById("four").style.color = "white";
-      document.getElementById("five").style.color = plava;
+      document.getElementById("kec").style.background = "white";
+      document.getElementById("dvojka").style.background = "white";
+      document.getElementById("trojka").style.background = "white";
+      document.getElementById("cetvorka").style.background = "white";
+      document.getElementById("petica").style.background = plava;
       document.getElementById("jedan").style.color = "white";
       document.getElementById("dva").style.color = "white";
       document.getElementById("tri").style.color = "white";

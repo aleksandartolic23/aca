@@ -108,7 +108,7 @@ body {
   z-index:15;
 }
 .indikator {
-  a, span {
+  a{
   text-decoration:none;
 	color: white;
 	display: block;
@@ -119,6 +119,17 @@ body {
 }
 span#one{
   color:$plava;
+}
+.indikator{
+  div{
+  display:block;
+  width:1.8vh;
+  height:1.8vh;
+  border-radius: 50%;
+  background-color: white;
+  margin:1.5vh 0 2.7vh 0;
+  transition: background-color 0.5s ease;
+}
 }
 div#textic{
   position:relative;

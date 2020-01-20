@@ -103,7 +103,7 @@ body {
   z-index: 15;
 }
 
-.indikator a, .indikator span {
+.indikator a {
   text-decoration: none;
   color: white;
   display: block;
@@ -114,6 +114,16 @@ body {
 
 span#one {
   color: #56bcbb;
+}
+
+.indikator div {
+  display: block;
+  width: 1.8vh;
+  height: 1.8vh;
+  border-radius: 50%;
+  background-color: white;
+  margin: 1.5vh 0 2.7vh 0;
+  transition: background-color 0.5s ease;
 }
 
 div#textic {
