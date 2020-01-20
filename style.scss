@@ -170,6 +170,8 @@ div#textic{
   background-position:center;
   width:100vw;
   height:115vh;
+  margin-top:10vh;
+  margin-bottom:10vh;
 }
 #section4{
   position:relative;
@@ -313,7 +315,7 @@ h2#naslovsekcije{
   p#onamaharpun{
     width:36vw;
     position:absolute;
-    top:20vh;
+    top:25vh;
     z-index:9;
     font-family: pasus;
     color: $pasusboja;
@@ -486,12 +488,24 @@ li{
    font-weight: normal;
    font-size:1.5vh;
 }
+@media screen and (max-width:812px){
+  h2#naslovsekcijewhite{
+    width:80%;
+  }
+  #footport{
+    width:100%;
+  }
+
+}
 @media screen and (max-width:600px){
   .indikator{
     display:none;
   }
 }
 @media screen and (max-width: 768px){
+  h2#podvuceninaslov{
+    top:2vh;
+  }
   #section4{
     height:auto;
     margin-bottom:25vmax;
@@ -526,7 +540,7 @@ li{
       }
       #slike{
         width:60vmin;
-        top:55vh;
+        top:58vh;
       }
     #about {
       width:50%;
